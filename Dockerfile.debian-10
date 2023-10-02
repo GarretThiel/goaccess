@@ -1,4 +1,4 @@
-# Used to have all compile dependencies isolated in a container image.
+#!Used to have all compile dependencies isolated in a container image.
 FROM debian:10
 
 RUN apt-get update -qqq
@@ -20,3 +20,4 @@ WORKDIR /goaccess
 
 ENTRYPOINT ["./build-dynamic.sh"]
 
+ 
